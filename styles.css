@@ -16,11 +16,18 @@
     --tertiary-color: rgb(51, 51, 51);
     --quadratic-color: rgb(86, 86, 86);
 
-    font-feature-settings: 'tnum';
+    text-align: center;
+
+    cursor: none;
+}
+
+html {
+    background: black;
 }
 
 body {
-    background-color: #EFEFEF;
+    background: rgba(20, 20, 20, 1);
+    background-attachment: fixed;
 }
 
 span {
@@ -28,6 +35,44 @@ span {
 }
 
 /* ASSETS */
+
+#trailer {
+    height: 20px;
+    width: 20px;
+    /*background-color: lightgray;*/
+    background-color: transparent;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
+body:hover > #trailer {
+    opacity: 1;
+}
+
+#trailer2 {
+    height: 10px;
+    width: 10px;
+    background-color: lightgray;
+    border-radius: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
+body:hover > #trailer2 {
+    opacity: 1;
+}
 
 .separator {
     height: 1px;
@@ -119,7 +164,7 @@ img.emoji {
     bottom: 0;
     background: white;
     border-radius: 5px;
-    transition: all 0.1s ease;
+    transition: all 0.25s ease;
 }
 
 .navbutton:not(.is-active):hover:after {
@@ -132,10 +177,26 @@ img.emoji {
     color: black;
 }
 
+.padding {
+    height: 50px;
+}
+
 .landing {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(farthest-corner at 0px 0px, #8476ea, #c6b0f2, #a4eaf9);
+}
+
+.aboutme {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
