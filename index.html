@@ -1,46 +1,38 @@
-<!-- THANKS TWEMOJI FOR AWESOME EMOJIS! -->
-
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Spektacle</title>
-        <meta name="description" content="Official Portfolio for Spektacle">
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
-        <!-- Adding FontAwesome Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- This retrieves the latest Twemoji script -->
-        <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body>
-        <div id="trailer"></div>
-        <div id="trailer2"></div>
-
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
         <div class="header">
-            <li class="nav-list">
-                <a href="#" class="interactable navbutton fa fa-2x fa-spotify"></a>
-                <a href="https://twitter.com/SpektacleFR" class="interactable navbutton fa fa-2x fa-twitter"></a>
-                <a href="https://www.youtube.com/channel/UCqbAumSxr97Ne-mzEm5sL-A" class="interactable navbutton fa fa-2x fa-youtube-play"></a>
-                <a href="https://www.github.com/SpektacleFR" class="interactable navbutton fa fa-2x fa-github"></a>
-            </li>
+            <ul class="buttons">
+                <li class="navbutton"><a href="#">ABOUT</a></li>
+                <li class="navbutton active"><a href="#">HOME</a></li>
+                <li class="navbutton"><a href="#">WORK</a></li>
+            </ul>
         </div>
 
         <div class="landing">
-            <div class="rounded-logo logo-main"></div>
-            <div class="padding"></div>
-            <h1>I'm Spektacle</h1>
-            <p>I make things.</p>
+            <div class="background"></div>
+            <div class="main-box">
+                <h1 class="outline" data-text="I'M SPEKTACLE">I'M SPEKTACLE</h1>
+                <h1>I'M SPEKTACLE</h1>
+                <h1 class="outline" data-text="I'M SPEKTACLE">I'M SPEKTACLE</h1>
+            </div>
         </div>
-
-        <div class="aboutme">
-            <h1>About Me</h1>
-            <div class="padding"></div>
-            <p>I do lots of stuff, from 2D Vector Art, to 3D Modeling, and even Music Production.<br>
-                I like to code in my spare time, and play games if my MacBook can run them.</p>
-        </div>
-        <script src="main.js" async defer></script>
+        
+        <script src="main.css" async defer></script>
     </body>
 </html>
