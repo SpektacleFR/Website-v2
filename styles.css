@@ -10,6 +10,7 @@
 .header {
     position: absolute;
     display: flex;
+    justify-content: center;
     top: 0;
     left: 0;
     
@@ -20,15 +21,12 @@
 }
 
 .buttons {
-    width: 100%;
+    width: 50%;
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 2.25vw;
     list-style: none;
-    font-size: 1.25vw;
-    font-weight: 100;
     z-index: 1;
 }
 
@@ -40,11 +38,11 @@
     justify-content: center;
     align-items: center;
 
-    width: 6vw;
-    height: 2vw;
+    width: 100px;
+    aspect-ratio: 2.5 / 1;
     background-color: black;
     color: white;
-    border: 0.1em solid black;
+    border: 2px solid black;
 }
 
 .active a{
@@ -56,8 +54,8 @@
 .active a:before {
     content: '';
     position: absolute;
-    top: 0.5vw;
-    left: 0.5vw;
+    top: 5px;
+    left: 5px;
     width: 100%;
     height: 100%;
 
@@ -98,8 +96,9 @@
 
 .main-box {
     width: 50%;
-    aspect-ratio: 16 / 9;
+    padding: 25px;
     position: relative;
+    aspect-ratio: 16 / 9;
 
     display: flex;
     flex-direction: column;
@@ -115,11 +114,13 @@
     -o-user-select: none;
     user-select: none;
 
+    font-size:3vw;
+
     transition: all 200ms ease;
 }
 
 .main-box:before {
-    content: '© Spektacle 2024';
+    content: '';
     font-size: 1vw;
     color: white;
 
@@ -167,30 +168,17 @@
     flex-direction: column;
     position: relative;
 
-    font-size: 5.75vw;
     text-align: center;
     font-weight: 600;
-
-    -webkit-text-stroke: 0.25vw black;
 
     transition: all 200ms ease;
 
     z-index: 1;
 }
 
-.main-box > .outline:after {
-    content: attr(data-text);
-    color: white;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    -webkit-text-stroke: 0px #000;
-}
-
 .main-box > .outline {
-    color: white;
+    font-weight: 200;
+    letter-spacing: 0.05em;
 }
 
 .main-box:hover {
